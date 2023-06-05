@@ -21,10 +21,8 @@ using LESbrary.TurbulenceStatistics: first_order_statistics,
 
 try
     using CairoMakie
-catch
-    using GLMakie
 finally
-    @warn "Could not load either CairoMakie or GLMakie; animations are not available."
+    @warn "Could not load CairoMakie; animations are not available."
 end
 
 Logging.global_logger(OceananigansLogger())
